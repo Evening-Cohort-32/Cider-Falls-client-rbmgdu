@@ -1,7 +1,9 @@
-// Minimal app initializer module
-// Exports a no-op init function and wires it to DOMContentLoaded
-export const init = () => {
-  // implementation to be added
-};
+import { parkAreas } from './parkAreas.js'
+import { guestArea } from './guests.js'
+import { serviceAreas } from './services.js'
 
-document.addEventListener('DOMContentLoaded', init);
+document.addEventListener('DOMContentLoaded' , () => {
+    parkAreas()
+    guestArea()
+    serviceAreas()
+})
