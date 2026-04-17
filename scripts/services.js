@@ -1,6 +1,6 @@
 import { getServices, getAreaServices } from "./database.js";
 
-const allServies = getServices();
+const allServices = getServices();
 const AreaServices = getAreaServices();
 
 //
