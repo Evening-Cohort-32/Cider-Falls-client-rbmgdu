@@ -1,4 +1,5 @@
-import {getParkAreas, getServices} from "./database.js"
+import {getParkAreas} from "./database.js"
+import {serviceAreas} from "./services.js"
 
 const allAreas = getParkAreas()
 
