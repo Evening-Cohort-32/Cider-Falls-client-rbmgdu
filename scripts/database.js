@@ -1,21 +1,11 @@
+
+// end of database
 // In-memory "database" seeded from project docs
 // Resources described in the docs:
-// - parkAreas: has its own info (id, name, location)
-// - services: list of services the park provides (id, name)
+// end of database
 // - guests: park visitors (id, name, optional area_id)
 // - areaServices: join table linking parkAreas <> services
 // - guestAreas: join table tracking which guests are in which areas
-//
-// The join records include a `current` flag so a guest can have a
-// history of visits while still allowing a single current location to be
-// Clean single-definition module
-// (previous file had merge conflicts/duplicates; resolved)
-
-// parkAreas: has its own info (id, name, location)
-// services: list of services the park provides (id, name)
-// guests: park visitors (id, name, optional area_id)
-// areaServices: join table linking parkAreas <> services
-// guestAreas: join table tracking which guests are in which areas
 
 export const parkAreas = [
   { id: 1, name: 'Rivers & Trails', location: 'North Loop' },
@@ -50,3 +40,5 @@ export const guestAreas = [
   { id: 3, guestId: 3, parkAreaId: 3, current: true },
   { id: 4, guestId: 1, parkAreaId: 3, current: false },
 ];
+
+// Resources described in the docs:
