@@ -4,6 +4,7 @@ import { getServices } from "./services.js";
 const allAreas = parkAreas;
 
 export const createParkAreas = () => {
+<<<<<<< HEAD
   let parkAreaHTML = "";
   for (const area of allAreas) {
     parkAreaHTML += `
@@ -38,6 +39,21 @@ export const initParkAreaClicks = (containerSelector = '#container') => {
       // toggle: if visible, hide; otherwise show
       guestInfo.innerHTML = '';
       return;
+=======
+    for(const area of allAreas){
+        parkAreaHTML += `
+        <section id = "parkAreaDetails" 
+        data-type = "parkArea"
+        data-area_id = "${area.id}"
+        data-area_name = "${area.name}"
+        data-location = "${area.location}"
+        >
+            <h3>${area.location}</h3>
+            <h2>${area.name}</h2>
+            ${getServices(area)}
+        </section>
+        `
+>>>>>>> a301b8deff971ca5156aa8409238d48a4f845d7d
     }
 
     // find current guests in this area (guests may have area_id set)

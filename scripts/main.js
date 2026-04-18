@@ -35,5 +35,4 @@ mainContainer.innerHTML = mainHTML;
 // initialize delegated click handlers (after DOM insertion)
 initServiceClicks('#container');
 initParkAreaClicks('#container');
-
-
+ 
