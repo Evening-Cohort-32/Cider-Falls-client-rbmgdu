@@ -8,7 +8,7 @@ header{
 }
 
 h1{
-
+font-size: 50px;
 }
 
 #logo{
@@ -18,8 +18,8 @@ h1{
 .details{
     margin-top: 5rem;
     display: flex;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
 }
 
 .parks{
@@ -64,4 +64,23 @@ footer{
 }
 ul{
     text-align:justify;
+}
+
+.services{
+    display: flex;
+    text-align: center;
+}
+
+.serviceList{
+    display: flex;
+    gap:10px;
+    list-style: none;
+}
+
+.listedService{
+    width:100%;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: rgba(255, 166, 0, 0.432);
+    padding: 5px;
 }

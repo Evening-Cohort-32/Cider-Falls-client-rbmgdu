@@ -12,11 +12,11 @@ const mainHTML = `
         <img id = logo src = https://www.nps.gov/theme/assets/dist/images/branding/logo.png>
         <h1>Cider Falls Park</h1>
     </header>
-        <article class=details>
         <section class=services>
             ${createServiceList()}
-            </section>
-              <div id="service-message"></div>
+        </section>
+        <div id="service-message"></div>
+        <article class=details>
             <section class = parks>
                 ${createParkAreas()}
             </section>
@@ -53,9 +53,13 @@ document.addEventListener("click", (clickEvent) => {
 
         const clickedService = services.find((s) => s.id === serviceId)
 
-        document.querySelector("#service-message").innerHTML = `
-            <p>${clickedService.name} is supported by: 
-            ${supportingAreas.join(", ")}</p>
-        `
+        window.alert(`${clickedService.name} is supported by: 
+            ${supportingAreas.join(", ")}`)
+            
+        // document.querySelector("#service-message").innerHTML = `
+        //     <p>${clickedService.name} is supported by: 
+        //     ${supportingAreas.join(", ")}</p>
+        // `
     }
 })
+
