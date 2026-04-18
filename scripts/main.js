@@ -1,5 +1,5 @@
-import { createParkAreas } from './parkAreas.js'
-import { createGuests } from './guests.js'
+import { createParkAreas } from "./parkAreas.js";
+import { createGuests } from "./guests.js";
 
 // document.addEventListener('DOMContentLoaded' , () => {
 //     parkAreas()
@@ -29,5 +29,5 @@ const mainHTML = `
         <ul>Ciderfallspark.org</ul>
         <ul>123 Forrest Road, Chatt Falls, TN</ul>
     </footer>
-`
-mainContainer.innerHTML = mainHTML
+`;
+mainContainer.innerHTML = mainHTML;
