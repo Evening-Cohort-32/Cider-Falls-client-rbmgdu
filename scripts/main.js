@@ -1,14 +1,8 @@
 import { createParkAreas } from './parkAreas.js'
 import { createGuests } from './guests.js'
-import { createServiceList } from './createServices.js'
+import { createServiceList } from './findServices.js'
 import { services, parkAreas, areaServices } from './database.js'
 
-
-// document.addEventListener('DOMContentLoaded' , () => {
-//     parkAreas()
-//     guestArea()
-//     serviceAreas()
-// })
 
 const mainContainer = document.querySelector("#container");
 
@@ -38,6 +32,7 @@ const mainHTML = `
     </footer>
 `
 mainContainer.innerHTML = mainHTML
+
 document.addEventListener("click", (clickEvent) => {
     const itemClicked = clickEvent.target
 
