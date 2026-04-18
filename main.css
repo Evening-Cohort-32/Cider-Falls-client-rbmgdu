@@ -1,0 +1,67 @@
+header{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(182, 153, 115);
+}
+
+h1{
+
+}
+
+#logo{
+    max-width: 100px;
+}
+
+.details{
+    margin-top: 5rem;
+    display: flex;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.parks{
+display: flex;
+gap: 50px;
+margin-right: auto;
+margin-left: 2rem;
+width: 800px;
+}
+
+#parkAreaDetails{
+    border: 1px solid orange;
+    width: 100%;
+    display: block;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.guests{
+    color: whitesmoke;
+    margin-right: 5rem;
+    margin-left: auto;
+    border: 3px solid rgb(107, 142, 35);
+    width: 200px;
+    text-align: center;
+    background-image: url("https://static.tildacdn.com/tild3235-3866-4463-a537-616135633535/qVKrBjKhvaNlvk6Rho4x.jpg");
+    background-size: cover;
+    border-radius: 15px;
+}
+
+footer{
+    color: white;
+    font-size: 20px;
+    gap: 100px;
+    margin-bottom: 5rem;
+    margin-top: 20%;
+    display: flex;
+    flex-direction: row;
+    background-image: url("https://static.tildacdn.com/tild3235-3866-4463-a537-616135633535/qVKrBjKhvaNlvk6Rho4x.jpg");
+    background-size:cover;
+    background-position: center;
+}
+ul{
+    text-align:justify;
+}
