@@ -1,12 +1,12 @@
-import { parkAreas } from './parkAreas.js'
-import { guestArea } from './guests.js'
-import { serviceAreas } from './services.js'
+import { createParkAreas } from './parkAreas.js'
+import { createGuests } from './guests.js'
 
-document.addEventListener('DOMContentLoaded' , () => {
-    parkAreas()
-    guestArea()
-    serviceAreas()
-})
+// document.addEventListener('DOMContentLoaded' , () => {
+//     parkAreas()
+//     guestArea()
+//     serviceAreas()
+// })
+
 const mainContainer = document.querySelector("#container");
 
 //The main HTML for the site is created
@@ -17,11 +17,11 @@ const mainHTML = `
     </header>
         <article class = details>
             <section class = parks>
-                ${parkAreas()}
+                ${createParkAreas()}
             </section>
             <section class = guests>
                 <H2>Guests</H2>
-                ${guestArea()}
+                ${createGuests()}
             </section>
         </article>
     <footer>
@@ -30,3 +30,4 @@ const mainHTML = `
         <ul>123 Forrest Road, Chatt Falls, TN</ul>
     </footer>
 `
+mainContainer.innerHTML = mainHTML

@@ -1,22 +1,24 @@
-import {getParkAreas} from "./database.js"
-import {serviceAreas} from "./services.js"
+import {parkAreas} from "./database.js"
+import {getServices} from "./services.js"
 
-const allAreas = getParkAreas()
+const allAreas = parkAreas
 
 let parkAreaHTML = ``
 
-export const parkAreas = () => {
+export const createParkAreas = () => {
     for(const area of allAreas){
         parkAreaHTML += `
         <section id = "parkAreaDetails" 
         data.type = "parkArea"
-        data.area_id = "${area.area_id}"
-        data.area_name = "${area.area_name}"
+        data.area_id = "${area.id}"
+        data.area_name = "${area.name}"
         data.location = "${area.location}"
         >
-            <h2>${area.area_name}</h2>
-            ${services(area)}
+            <h3>${area.location}</h3>
+            <h2>${area.name}</h2>
+            ${getServices(area)}
         </section>
         `
     }
+    return parkAreaHTML
 }
