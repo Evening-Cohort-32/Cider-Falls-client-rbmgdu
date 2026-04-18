@@ -1,5 +1,6 @@
 import { createParkAreas } from './parkAreas.js'
 import { createGuests } from './guests.js'
+import { initServiceClicks } from './services.js'
 
 // document.addEventListener('DOMContentLoaded' , () => {
 //     parkAreas()
@@ -31,3 +32,5 @@ const mainHTML = `
     </footer>
 `
 mainContainer.innerHTML = mainHTML
+// initialize delegated click handler for service items
+initServiceClicks('#container')
